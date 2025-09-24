@@ -2,3 +2,10 @@
 // https://sequelize.org/docs/v6/getting-started/
 // Mirar opción de la guia de sequelize
 // Utilizar variables de entorno para la conexion
+import Sequelize from 'sequelize';
+
+export const sequelize = new Sequelize("stock", "root", "123456", {
+    dialect: 'mysql',
+    host: 'localhost',
+    port: 3306
+})
